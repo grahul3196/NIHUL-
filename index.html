@@ -12,79 +12,109 @@
         <h1>स्वागत आहे!</h1>
         <p>आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
     </header>
-    <section id="invitation-details">
-        <h2>लग्नाचे तपशील</h2>
-        <div class="details">
-            <img src="bride.jpg" alt="वधू">
-            <img src="groom.jpg" alt="वर">
-            <p>वधू: <span>वधूचे नाव</span></p>
-            <p>वर: <span>वराचे नाव</span></p>
-            <p>तारीख: <span>तारीख</span></p>
-            <p>वेळ: <span>वेळ</span></p>
-            <p>स्थळ: <span>स्थळ</span></p>
-            <div id="map"></div>
-        </div>
-    </section>
-    <section id="rsvp">
-        <h2>RSVP</h2>
-        <form>
-            <label for="name">नाव:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="message">संदेश:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">पाठवा</button>
-        </form>
-    </section>
-    <section id="gallery">
-        <h2>फोटो गॅलरी</h2>
-        <div class="slideshow">
-            <!-- Add your photo gallery here -->
-        </div>
-        <form>
-            <label for="photo-upload">फोटो अपलोड करा:</label>
-            <input type="file" id="photo-upload" name="photo-upload">
-            <button type="submit">अपलोड</button>
-        </form>
-    </section>
-    <section id="guest-book">
-        <h2>अतिथी पुस्तिका</h2>
-        <form>
-            <label for="guest-name">नाव:</label>
-            <input type="text" id="guest-name" name="guest-name" required>
-            <label for="guest-message">संदेश:</label>
-            <textarea id="guest-message" name="guest-message" required></textarea>
-            <button type="submit">पाठवा</button>
-        </form>
-        <div id="messages">
-            <!-- Display guest messages here -->
-        </div>
-    </section>
-    <section id="countdown">
-        <h2>उर्वरित वेळ</h2>
-        <div id="timer"></div>
-    </section>
-    <section id="music-videos">
-        <h2>संगीत आणि व्हिडिओ</h2>
-        <audio controls>
-            <source src="marathi-song.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <video controls>
-            <source src="couple-journey.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
-    </section>
-    <section id="contact">
-        <h2>संपर्क</h2>
-        <p>कुटुंबातील सदस्यांचे संपर्क तपशील</p>
-        <form>
-            <label for="query-name">नाव:</label>
-            <input type="text" id="query-name" name="query-name" required>
-            <label for="query-message">संदेश:</label>
-            <textarea id="query-message" name="query-message" required></textarea>
-            <button type="submit">पाठवा</button>
-        </form>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#home">मुख्य पृष्ठ</a></li>
+            <li><a href="#invitation-details">लग्नाचे तपशील</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="#gallery">फोटो गॅलरी</a></li>
+            <li><a href="#guest-book">अतिथी पुस्तिका</a></li>
+            <li><a href="#countdown">उर्वरित वेळ</a></li>
+            <li><a href="#music-videos">संगीत आणि व्हिडिओ</a></li>
+            <li><a href="#contact">संपर्क</a></li>
+            <li><a href="#family-members">कुटुंबातील सदस्य</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>स्वागत आहे!</h2>
+            <p>आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
+        </section>
+        <section id="invitation-details">
+            <h2>लग्नाचे तपशील</h2>
+            <div class="details">
+                <img src="bride.jpg" alt="वधू">
+                <img src="groom.jpg" alt="वर">
+                <p>वधू: <span>वधूचे नाव</span></p>
+                <p>वर: <span>वराचे नाव</span></p>
+                <p>तारीख: <span>तारीख</span></p>
+                <p>वेळ: <span>वेळ</span></p>
+                <p>स्थळ: <span>स्थळ</span></p>
+                <div id="map"></div>
+            </div>
+        </section>
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <form>
+                <label for="name">नाव:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">संदेश:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">पाठवा</button>
+            </form>
+        </section>
+        <section id="gallery">
+            <h2>फोटो गॅलरी</h2>
+            <div class="slideshow">
+                <!-- Add your photo gallery here -->
+            </div>
+            <form>
+                <label for="photo-upload">फोटो अपलोड करा:</label>
+                <input type="file" id="photo-upload" name="photo-upload">
+                <button type="submit">अपलोड</button>
+            </form>
+        </section>
+        <section id="guest-book">
+            <h2>अतिथी पुस्तिका</h2>
+            <form>
+                <label for="guest-name">नाव:</label>
+                <input type="text" id="guest-name" name="guest-name" required>
+                <label for="guest-message">संदेश:</label>
+                <textarea id="guest-message" name="guest-message" required></textarea>
+                <button type="submit">पाठवा</button>
+            </form>
+            <div id="messages">
+                <!-- Display guest messages here -->
+            </div>
+        </section>
+        <section id="countdown">
+            <h2>उर्वरित वेळ</h2>
+            <div id="timer"></div>
+        </section>
+        <section id="music-videos">
+            <h2>संगीत आणि व्हिडिओ</h2>
+            <audio controls>
+                <source src="marathi-song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls>
+                <source src="couple-journey.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+        <section id="contact">
+            <h2>संपर्क</h2>
+            <p>कुटुंबातील सदस्यांचे संपर्क तपशील</p>
+            <form>
+                <label for="query-name">नाव:</label>
+                <input type="text" id="query-name" name="query-name" required>
+                <label for="query-message">संदेश:</label>
+                <textarea id="query-message" name="query-message" required></textarea>
+                <button type="submit">पाठवा</button>
+            </form>
+        </section>
+        <section id="family-members">
+            <h2>कुटुंबातील सदस्य</h2>
+            <div class="family-list">
+                <h3>वराचे कुटुंब</h3>
+                <p>वडील: <span>वराचे वडील</span></p>
+                <p>आई: <span>वराची आई</span></p>
+                <h3>वधूचे कुटुंब</h3>
+                <p>वडील: <span>वधूचे वडील</span></p>
+                <p>आई: <span>वधूची आई</span></p>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
