@@ -44,4 +44,34 @@ const navLinks = document.querySelectorAll('nav ul li a');
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        const targetId = link.getAttribute('href').substring
+        const targetId = link.getAttribute('href').substring(1);
+        sections.forEach(section => {
+            section.classList.remove('active');
+            section.classList.add('d-none');
+            if (section.id === targetId) {
+                section.classList.add('active');
+                section.classList.remove('d-none');
+            }
+        });
+        // Collapse the navbar on mobile after clicking a link
+        $('.navbar-collapse').collapse('hide');
+    });
+});
+
+// Set Home Section as Active on Load
+document.getElementById('home').classList.add('active');
+document.getElementById('home').classList.remove('d-none');
+
+// RSVP Form Submission
+document.getElementById('rsvp-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('rsvp-confirmation').classList.remove('d-none');
+    this.reset();
+});
+
+// Initialize Lightbox
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+});
+
