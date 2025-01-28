@@ -47,8 +47,10 @@ navLinks.forEach(link => {
         const targetId = link.getAttribute('href').substring(1);
         sections.forEach(section => {
             section.classList.remove('active');
+            section.classList.add('d-none');
             if (section.id === targetId) {
                 section.classList.add('active');
+                section.classList.remove('d-none');
             }
         });
     });
@@ -56,4 +58,5 @@ navLinks.forEach(link => {
 
 // Set Home Section as Active on Load
 document.getElementById('home').classList.add('active');
+document.getElementById('home').classList.remove('d-none');
 
