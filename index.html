@@ -4,108 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marathi Marriage Invitation</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>स्वागत आहे!</h1>
-        <p>आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
+    <header class="bg-warning text-white text-center py-5">
+        <h1 class="display-4">स्वागत आहे!</h1>
+        <p class="lead">आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">मुख्य पृष्ठ</a></li>
-            <li><a href="#invitation-details">लग्नाचे तपशील</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#gallery">फोटो गॅलरी</a></li>
-            <li><a href="#guest-book">अतिथी पुस्तिका</a></li>
-            <li><a href="#countdown">उर्वरित वेळ</a></li>
-            <li><a href="#music-videos">संगीत आणि व्हिडिओ</a></li>
-            <li><a href="#contact">संपर्क</a></li>
-            <li><a href="#family-members">कुटुंबातील सदस्य</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">लग्न</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">मुख्य पृष्ठ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#invitation-details">लग्नाचे तपशील</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">फोटो गॅलरी</a></li>
+                <li class="nav-item"><a class="nav-link" href="#guest-book">अतिथी पुस्तिका</a></li>
+                <li class="nav-item"><a class="nav-link" href="#countdown">उर्वरित वेळ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#music-videos">संगीत आणि व्हिडिओ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">संपर्क</a></li>
+                <li class="nav-item"><a class="nav-link" href="#family-members">कुटुंबातील सदस्य</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
+    <main class="container my-5">
         <section id="home" class="active">
-            <h2>स्वागत आहे!</h2>
-            <p>आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
+            <h2 class="text-center">स्वागत आहे!</h2>
+            <p class="text-center">आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
         </section>
-        <section id="invitation-details">
-            <h2>लग्नाचे तपशील</h2>
-            <div class="details">
-                <img src="bride.jpg" alt="वधू">
-                <img src="groom.jpg" alt="वर">
+        <section id="invitation-details" class="d-none">
+            <h2 class="text-center">लग्नाचे तपशील</h2>
+            <div class="details text-center">
+                <img src="bride.jpg" alt="वधू" class="rounded-circle mx-2" width="150" height="150">
+                <img src="groom.jpg" alt="वर" class="rounded-circle mx-2" width="150" height="150">
                 <p>वधू: <span>वधूचे नाव</span></p>
                 <p>वर: <span>वराचे नाव</span></p>
                 <p>तारीख: <span>तारीख</span></p>
                 <p>वेळ: <span>वेळ</span></p>
                 <p>स्थळ: <span>स्थळ</span></p>
-                <div id="map"></div>
+                <div id="map" class="my-3"></div>
             </div>
         </section>
-        <section id="rsvp">
-            <h2>RSVP</h2>
-            <form>
-                <label for="name">नाव:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="message">संदेश:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">पाठवा</button>
+        <section id="rsvp" class="d-none">
+            <h2 class="text-center">RSVP</h2>
+            <form class="text-center">
+                <div class="form-group">
+                    <label for="name">नाव:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">संदेश:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">पाठवा</button>
             </form>
         </section>
-        <section id="gallery">
-            <h2>फोटो गॅलरी</h2>
-            <div class="slideshow">
+        <section id="gallery" class="d-none">
+            <h2 class="text-center">फोटो गॅलरी</h2>
+            <div class="slideshow text-center">
                 <!-- Add your photo gallery here -->
             </div>
-            <form>
-                <label for="photo-upload">फोटो अपलोड करा:</label>
-                <input type="file" id="photo-upload" name="photo-upload">
-                <button type="submit">अपलोड</button>
+            <form class="text-center">
+                <div class="form-group">
+                    <label for="photo-upload">फोटो अपलोड करा:</label>
+                    <input type="file" id="photo-upload" name="photo-upload" class="form-control-file">
+                </div>
+                <button type="submit" class="btn btn-warning">अपलोड</button>
             </form>
         </section>
-        <section id="guest-book">
-            <h2>अतिथी पुस्तिका</h2>
-            <form>
-                <label for="guest-name">नाव:</label>
-                <input type="text" id="guest-name" name="guest-name" required>
-                <label for="guest-message">संदेश:</label>
-                <textarea id="guest-message" name="guest-message" required></textarea>
-                <button type="submit">पाठवा</button>
+        <section id="guest-book" class="d-none">
+            <h2 class="text-center">अतिथी पुस्तिका</h2>
+            <form class="text-center">
+                <div class="form-group">
+                    <label for="guest-name">नाव:</label>
+                    <input type="text" id="guest-name" name="guest-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="guest-message">संदेश:</label>
+                    <textarea id="guest-message" name="guest-message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">पाठवा</button>
             </form>
-            <div id="messages">
+            <div id="messages" class="text-center my-3">
                 <!-- Display guest messages here -->
             </div>
         </section>
-        <section id="countdown">
-            <h2>उर्वरित वेळ</h2>
-            <div id="timer"></div>
+        <section id="countdown" class="d-none">
+            <h2 class="text-center">उर्वरित वेळ</h2>
+            <div id="timer" class="text-center"></div>
         </section>
-        <section id="music-videos">
-            <h2>संगीत आणि व्हिडिओ</h2>
-            <audio controls>
-                <source src="marathi-song.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <video controls>
-                <source src="couple-journey.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
+        <section id="music-videos" class="d-none">
+            <h2 class="text-center">संगीत आणि व्हिडिओ</h2>
+            <div class="text-center">
+                <audio controls class="my-3">
+                    <source src="marathi-song.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <video controls class="my-3" width="100%">
+                    <source src="couple-journey.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
         </section>
-        <section id="contact">
-            <h2>संपर्क</h2>
-            <p>कुटुंबातील सदस्यांचे संपर्क तपशील</p>
-            <form>
-                <label for="query-name">नाव:</label>
-                <input type="text" id="query-name" name="query-name" required>
-                <label for="query-message">संदेश:</label>
-                <textarea id="query-message" name="query-message" required></textarea>
-                <button type="submit">पाठवा</button>
+        <section id="contact" class="d-none">
+            <h2 class="text-center">संपर्क</h2>
+            <p class="text-center">कुटुंबातील सदस्यांचे संपर्क तपशील</p>
+            <form class="text-center">
+                <div class="form-group">
+                    <label for="query-name">नाव:</label>
+                    <input type="text" id="query-name" name="query-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="query-message">संदेश:</label>
+                    <textarea id="query-message" name="query-message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">पाठवा</button>
             </form>
         </section>
-        <section id="family-members">
-            <h2>कुटुंबातील सदस्य</h2>
-            <div class="family-list">
+        <section id="family-members" class="d-none">
+            <h2 class="text-center">कुटुंबातील सदस्य</h2>
+            <div class="family-list text-center">
                 <h3>वराचे कुटुंब</h3>
                 <p>वडील: <span>वराचे वडील</span></p>
                 <p>आई: <span>वराची आई</span></p>
@@ -115,6 +138,9 @@
             </div>
         </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
