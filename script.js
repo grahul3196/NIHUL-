@@ -62,15 +62,12 @@ navLinks.forEach(link => {
 document.getElementById('home').classList.add('active');
 document.getElementById('home').classList.remove('d-none');
 
-// RSVP Form Submission
-document.getElementById('rsvp-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('rsvp-confirmation').classList.remove('d-none');
-    this.reset();
-});
-
 // Initialize Lightbox
 lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
 });
+
+// Play Background Music
+const backgroundMusic = document.getElementById('background-music');
+backgroundMusic.play();
