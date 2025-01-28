@@ -60,4 +60,3 @@ navLinks.forEach(link => {
 document.getElementById('home').classList.add('active');
 document.getElementById('home').classList.remove('d-none');
 
-
