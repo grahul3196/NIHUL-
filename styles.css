@@ -15,6 +15,7 @@ header {
     background-image: url('header-image.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh; /* Adjust this value to increase the size of the header image */
 }
 
 header h1 {
