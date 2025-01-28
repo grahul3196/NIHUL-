@@ -56,4 +56,3 @@ navLinks.forEach(link => {
 
 // Set Home Section as Active on Load
 document.getElementById('home').classList.add('active');
-
