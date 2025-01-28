@@ -36,3 +36,23 @@ const script = document.createElement('script');
 script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
 script.async = true;
 document.head.appendChild(script);
+
+// Tab Navigation
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        sections.forEach(section => {
+            section.classList.remove('active');
+            if (section.id === targetId) {
+                section.classList.add('active');
+            }
+        });
+    });
+});
+
+// Set Home Section as Active on Load
+document.getElementById('home').classList.add('active');
