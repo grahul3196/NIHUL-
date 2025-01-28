@@ -25,12 +25,52 @@ header p {
     margin: 10px 0 0;
 }
 
+nav {
+    background-color: #ff6600;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
 section {
     padding: 40px 20px;
-    margin: 20px;
+    margin: 20px 0;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+section.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h2 {
@@ -121,4 +161,19 @@ audio, video {
     margin: 10px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.family-list {
+    margin-top: 20px;
+}
+
+.family-list h3 {
+    color: #ff6600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.family-list p {
+    font-size: 1.2em;
+    margin: 5px 0;
 }
