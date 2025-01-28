@@ -241,7 +241,7 @@ audio, video {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url('https://i.imgur.com/5A0gK7F.png');
+    background-image: url('rose.png');
     background-size: cover;
     opacity: 0.8;
     animation: fall linear infinite;
