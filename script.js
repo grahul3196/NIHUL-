@@ -10,11 +10,11 @@ const countdown = setInterval(() => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById('timer').innerHTML = `${days} दिवस ${hours} तास ${minutes} मिनिटे ${seconds} सेकंद`;
+    document.getElementById('countdown-timer').innerHTML = `${days} दिवस ${hours} तास ${minutes} मिनिटे ${seconds} सेकंद`;
 
     if (distance < 0) {
         clearInterval(countdown);
-        document.getElementById('timer').innerHTML = 'लग्न झाले आहे!';
+        document.getElementById('countdown-timer').innerHTML = 'लग्न झाले आहे!';
     }
 }, 1000);
 
