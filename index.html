@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <header class="bg-primary text-white text-center py-5">
@@ -29,6 +30,7 @@
                 <li class="nav-item"><a class="nav-link" href="#music-videos">संगीत आणि व्हिडिओ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">संपर्क</a></li>
                 <li class="nav-item"><a class="nav-link" href="#family-members">कुटुंबातील सदस्य</a></li>
+                <li class="nav-item"><a class="nav-link" href="#schedule">कार्यक्रम</a></li>
             </ul>
         </div>
     </nav>
@@ -36,6 +38,12 @@
         <section id="home" class="active">
             <h2 class="text-center">स्वागत आहे!</h2>
             <p class="text-center">आमच्या लग्नाच्या आमंत्रण वेबसाइटवर आपले स्वागत आहे.</p>
+            <div id="countdown-timer" class="text-center my-4"></div>
+            <div class="social-media text-center">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="btn btn-primary mx-2">Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Join%20us%20for%20our%20wedding!" target="_blank" class="btn btn-info mx-2">Twitter</a>
+                <a href="https://www.instagram.com/" target="_blank" class="btn btn-danger mx-2">Instagram</a>
+            </div>
         </section>
         <section id="invitation-details" class="d-none">
             <h2 class="text-center">लग्नाचे तपशील</h2>
@@ -52,7 +60,7 @@
         </section>
         <section id="rsvp" class="d-none">
             <h2 class="text-center">RSVP</h2>
-            <form class="text-center">
+            <form class="text-center" id="rsvp-form">
                 <div class="form-group">
                     <label for="name">नाव:</label>
                     <input type="text" id="name" name="name" class="form-control" required>
@@ -63,11 +71,16 @@
                 </div>
                 <button type="submit" class="btn btn-primary">पाठवा</button>
             </form>
+            <div id="rsvp-confirmation" class="text-center my-3 d-none">
+                <p>आपले RSVP यशस्वीरित्या सबमिट केले आहे!</p>
+            </div>
         </section>
         <section id="gallery" class="d-none">
             <h2 class="text-center">फोटो गॅलरी</h2>
             <div class="slideshow text-center">
-                <!-- Add your photo gallery here -->
+                <a href="photo1.jpg" data-lightbox="wedding-gallery"><img src="photo1_thumb.jpg" alt="Photo 1"></a>
+                <a href="photo2.jpg" data-lightbox="wedding-gallery"><img src="photo2_thumb.jpg" alt="Photo 2"></a>
+                <!-- Add more photos here -->
             </div>
             <form class="text-center">
                 <div class="form-group">
@@ -137,10 +150,28 @@
                 <p>आई: <span>वधूची आई</span></p>
             </div>
         </section>
+        <section id="schedule" class="d-none">
+            <h2 class="text-center">कार्यक्रम</h2>
+            <div class="schedule-list text-center">
+                <h3>संगीत समारंभ</h3>
+                <p>तारीख: <span>तारीख</span></p>
+                <p>वेळ: <span>वेळ</span></p>
+                <p>स्थळ: <span>स्थळ</span></p>
+                <h3>लग्न समारंभ</h3>
+                <p>तारीख: <span>तारीख</span></p>
+                <p>वेळ: <span>वेळ</span></p>
+                <p>स्थळ: <span>स्थळ</span></p>
+                <h3>रिसेप्शन</h3>
+                <p>तारीख: <span>तारीख</span></p>
+                <p>वेळ: <span>वेळ</span></p>
+                <p>स्थळ: <span>स्थळ</span></p>
+            </div>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
