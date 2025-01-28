@@ -71,3 +71,19 @@ lightbox.option({
 // Play Background Music
 const backgroundMusic = document.getElementById('background-music');
 backgroundMusic.play();
+
+// Rose Petals Falling Animation
+function createPetal() {
+    const petal = document.createElement('div');
+    petal.classList.add('petal');
+    petal.style.left = `${Math.random() * 100}vw`;
+    petal.style.animationDuration = `${Math.random() * 3 + 2}s`;
+    petal.style.animationDelay = `${Math.random() * 5}s`;
+    document.getElementById('petals-container').appendChild(petal);
+
+    setTimeout(() => {
+        petal.remove();
+    }, 8000);
+}
+
+setInterval(createPetal, 300);
