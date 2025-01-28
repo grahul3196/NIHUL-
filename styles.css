@@ -257,3 +257,24 @@ audio, video {
         opacity: 0;
     }
 }
+
+/* Curtain Effect */
+#curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10000;
+    animation: openCurtain 2s forwards;
+}
+
+@keyframes openCurtain {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
