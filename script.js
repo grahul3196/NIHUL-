@@ -53,6 +53,8 @@ navLinks.forEach(link => {
                 section.classList.remove('d-none');
             }
         });
+        // Collapse the navbar on mobile after clicking a link
+        $('.navbar-collapse').collapse('hide');
     });
 });
 
