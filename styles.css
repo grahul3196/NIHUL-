@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
@@ -15,7 +15,7 @@ header {
     background-image: url('header-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 30vh; /* Adjust this value to fit the header image */
+    height: 40vh; /* Adjust this value to fit the header image */
 }
 
 header h1 {
@@ -78,6 +78,7 @@ h2 {
     color: #ff6600;
     font-size: 2em;
     margin-bottom: 20px;
+    font-family: 'Baloo Marathi', cursive;
 }
 
 form {
@@ -182,6 +183,7 @@ audio, video {
     color: #ff6600;
     font-size: 1.5em;
     margin-bottom: 10px;
+    font-family: 'Baloo Marathi', cursive;
 }
 
 .family-list p, .schedule-list p {
@@ -204,7 +206,7 @@ audio, video {
 }
 
 #countdown-container {
-    background-image: url('istockphoto-1186214696-2048x2048.jpg');
+    background-image: url('cova://uploaded-file?id=AzureAd_CYJXW%2F9b9cdcef-27a6-4a33-a99f-71bd1f3977a5&contentType=image%2Fpng');
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -216,6 +218,7 @@ audio, video {
 #countdown-container h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    font-family: 'Baloo Marathi', cursive;
 }
 
 #countdown-timer {
