@@ -204,7 +204,7 @@ audio, video {
 }
 
 #countdown-container {
-    background-image: url('cova://uploaded-file?id=AzureAd_CYJXW%2F9b9cdcef-27a6-4a33-a99f-71bd1f3977a5&contentType=image%2Fpng');
+    background-image: url('istockphoto-1186214696-2048x2048.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -341,5 +341,25 @@ audio, video {
     }
     100% {
         width: 0;
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    #countdown-timer {
+        flex-direction: row; /* Ensure horizontal layout on mobile */
+    }
+
+    .time-box {
+        flex: 1 1 45%; /* Adjust width for better fit on mobile */
+        margin: 5px; /* Adjust margin for better spacing on mobile */
+    }
+
+    .time-box span {
+        font-size: 2em; /* Adjust font size for better fit on mobile */
+    }
+
+    .time-box .label {
+        font-size: 0.8em; /* Adjust label font size for better fit on mobile */
     }
 }
