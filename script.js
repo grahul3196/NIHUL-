@@ -10,7 +10,12 @@ const countdown = setInterval(() => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById('countdown-timer').innerHTML = `${days} दिवस ${hours} तास ${minutes} मिनिटे ${seconds} सेकंद`;
+    document.getElementById('countdown-timer').innerHTML = `
+        <span>${days} दिवस</span>
+        <span>${hours} तास</span>
+        <span>${minutes} मिनिटे</span>
+        <span>${seconds} सेकंद</span>
+    `;
 
     if (distance < 0) {
         clearInterval(countdown);
@@ -107,3 +112,4 @@ function createPetal() {
 }
 
 setInterval(createPetal, 300);
+
