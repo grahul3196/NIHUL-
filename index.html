@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
-    <div id="curtain"></div>
-    <header class="bg-marathi text-white text-center py-5" style="background-image: url('header-image.jpg'); background-size: cover; background-position: center;">
+    <div id="curtain-left"></div>
+    <div id="curtain-right"></div>
+    <header class="bg-marathi text-white text-center py-5">
         <h1 class="display-4"></h1>
         <p class="lead"></p>
     </header>
@@ -25,11 +26,9 @@
                 <li class="nav-item"><a class="nav-link" href="#home">मुख्य पृष्ठ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#invitation-details">लग्नाचे तपशील</a></li>
                 <li class="nav-item"><a class="nav-link" href="#gallery">फोटो गॅलरी</a></li>
-                <li class="nav-item"><a class="nav-link" href="#guest-book">अतिथी पुस्तिका</a></li>
-                <li class="nav-item"><a class="nav-link" href="#live-stream">थेट प्रसारण</a></li>
                 <li class="nav-item"><a class="nav-link" href="#guest-interaction">अतिथी संवाद</a></li>
                 <li class="nav-item"><a class="nav-link" href="#music-videos">संगीत आणि व्हिडिओ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">संपर्क</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us">संपर्क</a></li>
                 <li class="nav-item"><a class="nav-link" href="#family-members">कुटुंबातील सदस्य</a></li>
                 <li class="nav-item"><a class="nav-link" href="#schedule">कार्यक्रम</a></li>
             </ul>
@@ -89,29 +88,6 @@
                 <button type="submit" class="btn btn-primary">अपलोड</button>
             </form>
         </section>
-        <section id="guest-book" class="d-none">
-            <h2 class="text-center">अतिथी पुस्तिका</h2>
-            <form class="text-center">
-                <div class="form-group">
-                    <label for="guest-name">नाव:</label>
-                    <input type="text" id="guest-name" name="guest-name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="guest-message">संदेश:</label>
-                    <textarea id="guest-message" name="guest-message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">पाठवा</button>
-            </form>
-            <div id="messages" class="text-center my-3">
-                <!-- Display guest messages here -->
-            </div>
-        </section>
-        <section id="live-stream" class="d-none">
-            <h2 class="text-center">थेट प्रसारण</h2>
-            <div class="text-center">
-                <iframe src="https://www.youtube.com/embed/YOUR_LIVE_STREAM_ID" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
         <section id="guest-interaction" class="d-none">
             <h2 class="text-center">अतिथी संवाद</h2>
             <div class="text-center">
@@ -131,20 +107,13 @@
                 </video>
             </div>
         </section>
-        <section id="contact" class="d-none">
+        <section id="contact-us" class="d-none">
             <h2 class="text-center">संपर्क</h2>
-            <p class="text-center">कुटुंबातील सदस्यांचे संपर्क तपशील</p>
-            <form class="text-center">
-                <div class="form-group">
-                    <label for="query-name">नाव:</label>
-                    <input type="text" id="query-name" name="query-name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="query-message">संदेश:</label>
-                    <textarea id="query-message" name="query-message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">पाठवा</button>
-            </form>
+            <div class="contact-list text-center">
+                <p>राहुल गजाकोश: <a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p>निकिता गजाकोश: <a href="tel:+919876543211">+91 98765 43211</a></p>
+                <!-- Add more contacts as needed -->
+            </div>
         </section>
         <section id="family-members" class="d-none">
             <h2 class="text-center">कुटुंबातील सदस्य</h2>
