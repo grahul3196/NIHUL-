@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marathi Marriage Invitation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap&family=Baloo+Tamma+2:wght@400;700&display=swap&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap&family=Baloo+Tamma+2:wght@400;700&display=swap&family=Montserrat:wght@400;700&display=swap&family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="curtain-left"></div>
@@ -23,14 +24,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">मुख्य पृष्ठ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#invitation-details">लग्नाचे तपशील</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">फोटो गॅलरी</a></li>
-                <li class="nav-item"><a class="nav-link" href="#guest-interaction">अतिथी संवाद</a></li>
-                <li class="nav-item"><a class="nav-link" href="#music-videos">संगीत आणि व्हिडिओ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact-us">संपर्क</a></li>
-                <li class="nav-item"><a class="nav-link" href="#family-members">कुटुंबातील सदस्य</a></li>
-                <li class="nav-item"><a class="nav-link" href="#schedule">कार्यक्रम</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> मुख्य पृष्ठ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#invitation-details"><i class="fas fa-envelope-open-text"></i> लग्नाचे तपशील</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery"><i class="fas fa-images"></i> फोटो गॅलरी</a></li>
+                <li class="nav-item"><a class="nav-link" href="#guest-interaction"><i class="fas fa-comments"></i> अतिथी संवाद</a></li>
+                <li class="nav-item"><a class="nav-link" href="#music-videos"><i class="fas fa-music"></i> संगीत आणि व्हिडिओ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us"><i class="fas fa-address-book"></i> संपर्क</a></li>
+                <li class="nav-item"><a class="nav-link" href="#family-members"><i class="fas fa-users"></i> कुटुंबातील सदस्य</a></li>
+                <li class="nav-item"><a class="nav-link" href="#schedule"><i class="fas fa-calendar-alt"></i> कार्यक्रम</a></li>
             </ul>
         </div>
     </nav>
@@ -38,7 +39,9 @@
         <section id="home" class="active">
             <h2 class="text-center">सुस्वागतम 🙏</h2>
             <p class="text-center">गजाकोश परिवार आणि परिवार आपले स्वागत करीत आहेत.</p>
-            <div id="countdown-timer" class="text-center my-4"></div>
+            <div id="countdown-container" class="text-center my-4">
+                <div id="countdown-timer"></div>
+            </div>
             <div class="quote text-center my-4">
                 <p class="marathi-font">नवरा बायको च्या प्रेमाच्या सागरात,<br>
                 संसाराचा सुंदर प्रवास सुरू होवो,<br>
@@ -144,6 +147,19 @@
             </div>
         </section>
     </main>
+    <footer class="text-center py-4">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/" target="_blank" class="mx-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="mx-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="mx-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
     <audio id="background-music" loop>
         <source src="background-music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
