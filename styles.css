@@ -204,7 +204,7 @@ audio, video {
 }
 
 #countdown-container {
-    background-image: url('path/to/your/background-image.jpg');
+    background-image: url('cova://uploaded-file?id=AzureAd_CYJXW%2F9b9cdcef-27a6-4a33-a99f-71bd1f3977a5&contentType=image%2Fpng');
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -222,15 +222,17 @@ audio, video {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
 }
 
 .time-box {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 20px;
-    margin: 0 10px;
+    margin: 10px; /* Adjusted margin for better spacing */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100px; /* Ensure it resizes properly */
 }
 
 .time-box span {
