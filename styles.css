@@ -15,7 +15,7 @@ header {
     background-image: url('header-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh; /* Adjust this value to fit the header image */
+    height: 50vh; /* Adjust this value to fit the header image */
 }
 
 header h1 {
@@ -301,12 +301,12 @@ audio, video {
 
 #curtain-left {
     left: 0;
-    background-image: url('https://example.com/curtain-left.png'); /* Replace with the URL of the left curtain image */
+    background-image: url('curtain.jpg'); /* Replace with the URL of the left curtain image */
 }
 
 #curtain-right {
     right: 0;
-    background-image: url('https://example.com/curtain-right.png'); /* Replace with the URL of the right curtain image */
+    background-image: url('curtain.jpg'); /* Replace with the URL of the right curtain image */
 }
 
 @keyframes openCurtain {
