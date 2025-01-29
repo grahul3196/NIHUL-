@@ -10,12 +10,10 @@ const countdown = setInterval(() => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById('countdown-timer').innerHTML = `
-        <span>${days} दिवस</span>
-        <span>${hours} तास</span>
-        <span>${minutes} मिनिटे</span>
-        <span>${seconds} सेकंद</span>
-    `;
+    document.getElementById('days').innerText = days;
+    document.getElementById('hours').innerText = hours;
+    document.getElementById('minutes').innerText = minutes;
+    document.getElementById('seconds').innerText = seconds;
 
     if (distance < 0) {
         clearInterval(countdown);
