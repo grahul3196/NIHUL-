@@ -296,7 +296,7 @@ audio, video {
     height: 100%;
     background-size: cover;
     z-index: 10000;
-    animation: openCurtain 2s forwards;
+    animation: openCurtain 4s forwards;
 }
 
 #curtain-left {
