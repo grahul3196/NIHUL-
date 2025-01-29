@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
@@ -219,6 +219,17 @@ audio, video {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: pulse 1s infinite;
+    display: inline-block;
+}
+
+#countdown-timer span {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.5em;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
 }
 
 @keyframes pulse {
@@ -257,6 +268,7 @@ audio, video {
 /* Rose Petals Falling Animation */
 .petal {
     position: absolute;
+    top: 0;
     width: 20px;
     height: 20px;
     background-image: url('rose.png');
