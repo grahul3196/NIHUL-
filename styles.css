@@ -15,7 +15,7 @@ header {
     background-image: url('header-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 30vh; /* Adjust this value to fit the header image */
+    height: 30vh;
 }
 
 header h1 {
@@ -209,160 +209,59 @@ audio, video {
     background-image: url('istockphoto-1186214696-2048x2048.png');
     background-size: cover;
     background-position: center;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
-}
-
-#countdown-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: 'Baloo Marathi', cursive;
 }
 
 #countdown-timer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    flex-wrap: nowrap;
 }
 
 .time-box {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    padding: 20px;
-    margin: 10px; /* Adjusted margin for better spacing */
+    padding: 10px;
+    margin: 5px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 100px; /* Ensure it resizes properly */
+    flex: 1 1 auto;
+    min-width: 60px;
 }
 
 .time-box span {
     display: block;
-    font-size: 3em;
+    font-size: 1.5em;
     color: #ff6600;
 }
 
 .time-box .label {
-    font-size: 1em;
+    font-size: 0.8em;
     color: #333;
-    margin-top: 10px;
-}
-
-.quote {
-    font-family: 'Marck Script', cursive;
-    font-size: 24px;
-    color: #ff6600;
-    margin: 30px 0;
-}
-
-/* Custom Themes */
-.theme1 {
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-.theme2 {
-    background-color: #fff3e0;
-    color: #5d4037;
-}
-
-.theme3 {
-    background-color: #e8f5e9;
-    color: #1b5e20;
-}
-
-/* Fireworks Styles */
-.firework {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #ff6600;
-    border-radius: 50%;
-    animation: explode 5s ease-out forwards;
-}
-
-@keyframes explode {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(5);
-        opacity: 0;
-    }
-}
-
-/* Rose Petals Falling Animation */
-.petal {
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background-image: url('rose.png');
-    background-size: cover;
-    opacity: 0.8;
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(-100px) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* Curtain Effect */
-#curtain-left, #curtain-right {
-    position: fixed;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    z-index: 10000;
-    animation: openCurtain 5s forwards;
-}
-
-#curtain-left {
-    left: 0;
-    background-image: url('curtain.jpg'); /* Replace with the URL of the left curtain image */
-}
-
-#curtain-right {
-    right: 0;
-    background-image: url('curtain.jpg'); /* Replace with the URL of the right curtain image */
-}
-
-@keyframes openCurtain {
-    0% {
-        width: 50%;
-    }
-    100% {
-        width: 0;
-    }
+    margin-top: 5px;
 }
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     #countdown-timer {
-        flex-direction: row; /* Ensure horizontal layout on mobile */
+        flex-wrap: nowrap;
     }
 
     .time-box {
-        flex: 1 1 45%; /* Adjust width for better fit on mobile */
-        margin: 5px; /* Adjust margin for better spacing on mobile */
+        padding: 5px;
+        margin: 2px;
+        min-width: 50px;
     }
 
     .time-box span {
-        font-size: 2em; /* Adjust font size for better fit on mobile */
+        font-size: 1.2em;
     }
 
     .time-box .label {
-        font-size: 0.8em; /* Adjust label font size for better fit on mobile */
+        font-size: 0.7em;
     }
 }
