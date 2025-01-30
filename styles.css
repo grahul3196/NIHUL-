@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'CVMaya';
-    src: url('path/to/CVmaya.woff') format('woff');
+    src: url('CVmaya.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
