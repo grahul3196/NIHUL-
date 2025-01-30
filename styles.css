@@ -1,3 +1,78 @@
+/* Define Custom Fonts */
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('fonts/custom-font1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('fonts/custom-font2.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont3';
+    src: url('fonts/custom-font3.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont4';
+    src: url('fonts/custom-font4.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont5';
+    src: url('fonts/custom-font5.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont6';
+    src: url('fonts/custom-font6.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont7';
+    src: url('fonts/custom-font7.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CustomFont8';
+    src: url('fonts/custom-font8.woff') format('woff');
+}
+
+/* Apply Fonts to Each Section */
+#home {
+    font-family: 'CustomFont1', sans-serif;
+}
+
+#invitation-details {
+    font-family: 'CustomFont2', serif;
+}
+
+#gallery {
+    font-family: 'CustomFont3', sans-serif;
+}
+
+#guest-interaction {
+    font-family: 'CustomFont4', serif;
+}
+
+#music-videos {
+    font-family: 'CustomFont5', sans-serif;
+}
+
+#contact-us {
+    font-family: 'CustomFont6', serif;
+}
+
+#family-members {
+    font-family: 'CustomFont7', sans-serif;
+}
+
+#schedule {
+    font-family: 'CustomFont8', serif;
+}
+
+/* Rest of the CSS */
 body {
     font-family: 'Mukta', sans-serif;
     background-color: #f8f9fa;
