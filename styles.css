@@ -35,8 +35,8 @@
 }
 
 @font-face {
-    font-family: 'CustomFont8';
-    src: url('fonts/custom-font8.woff') format('woff');
+    font-family: 'Shivaji02';
+    src: url('Shivaji02.woff') format('woff');
 }
 
 @font-face {
@@ -349,8 +349,8 @@ social-media-icons a:hover {
 }
 
 .marathi-font {
-    font-family: 'CVMaya', sans-serif;
-    font-size: 24px;
+    font-family: 'Shivaji02', sans-serif;
+    font-size: 20px;
     color: #ff6600;
     margin: 30px 0;
 }
