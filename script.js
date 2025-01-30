@@ -18,47 +18,8 @@ const countdown = setInterval(() => {
     if (distance < 0) {
         clearInterval(countdown);
         document.getElementById('countdown-timer').innerHTML = 'लग्न झाले आहे!';
-        triggerFireworks();
     }
 }, 1000);
-
-// Fireworks Animation
-function triggerFireworks() {
-    for (let i = 0; i < 30; i++) {
-        setTimeout(createFirework, i * 100);
-    }
-}
-
-function createFirework() {
-    const firework = document.createElement('div');
-    firework.classList.add('firework');
-    firework.style.left = `${Math.random() * 100}vw`;
-    firework.style.top = `${Math.random() * 100}vh`;
-    document.body.appendChild(firework);
-
-    setTimeout(() => {
-        firework.remove();
-    }, 1000);
-}
-
-// Google Maps Initialization
-function initMap() {
-    const venueLocation = { lat: 19.0760, lng: 72.8777 }; // Example coordinates for Mumbai
-    const map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: venueLocation
-    });
-    const marker = new google.maps.Marker({
-        position: venueLocation,
-        map: map
-    });
-}
-
-// Load Google Maps Script
-const script = document.createElement('script');
-script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
-script.async = true;
-document.head.appendChild(script);
 
 // Tab Navigation
 const sections = document.querySelectorAll('section');
