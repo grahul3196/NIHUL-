@@ -39,6 +39,13 @@
     src: url('fonts/custom-font8.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'CVMaya';
+    src: url('path/to/CVmaya.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Apply Fonts to Each Section */
 #home {
     font-family: 'CustomFont1', sans-serif;
@@ -276,7 +283,7 @@ audio, video {
     transition: color 0.3s;
 }
 
-.social-media-icons a:hover {
+social-media-icons a:hover {
     color: #ffcc00;
 }
 
@@ -339,4 +346,11 @@ audio, video {
     .time-box .label {
         font-size: 0.7em;
     }
+}
+
+.quote {
+    font-family: 'CVMaya', sans-serif;
+    font-size: 24px;
+    color: #ff6600;
+    margin: 30px 0;
 }
