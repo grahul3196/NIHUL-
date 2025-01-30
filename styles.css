@@ -1,7 +1,7 @@
 /* Define Custom Fonts */
 @font-face {
     font-family: 'CustomFont1';
-    src: url('fonts/custom-font1.woff') format('woff');
+    src: url('CVMaya.woff') format('woff');
 }
 
 @font-face {
