@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'CVMaya';
-    src: url('CVmaya.woff') format('woff');
+    src: url('CVMaya.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -81,7 +81,7 @@
 
 /* Rest of the CSS */
 body {
-    font-family: 'CVmaya', sans-serif;
+    font-family: 'CVMaya', sans-serif;
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
