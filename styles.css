@@ -389,7 +389,7 @@ audio, video {
     background-size: contain;
     width: 15px;
     height: 15px;
-    opacity: 0.7;
+    opacity: 1;
     animation: falling linear infinite;
 }
 
