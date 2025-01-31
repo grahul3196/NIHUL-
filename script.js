@@ -31,10 +31,10 @@ navLinks.forEach(link => {
         const targetId = link.getAttribute('href').substring(1);
         sections.forEach(section => {
             section.classList.remove('active');
-            section.classList.add('d-none');
+            section.style.display = 'none'; // Hide all sections
             if (section.id === targetId) {
                 section.classList.add('active');
-                section.classList.remove('d-none');
+                section.style.display = 'block'; // Show the target section
             }
         });
         // Collapse the navbar on mobile after clicking a link
@@ -44,7 +44,7 @@ navLinks.forEach(link => {
 
 // Set Home Section as Active on Load
 document.getElementById('home').classList.add('active');
-document.getElementById('home').classList.remove('d-none');
+document.getElementById('home').style.display = 'block';
 
 // Initialize Lightbox
 lightbox.option({
@@ -54,7 +54,11 @@ lightbox.option({
 
 // Play Background Music
 const backgroundMusic = document.getElementById('background-music');
-backgroundMusic.play();
+
+// Play music after user interaction
+document.addEventListener('click', () => {
+    backgroundMusic.play();
+}, { once: true });
 
 // Rose Petals Falling Animation
 function createPetal() {
@@ -67,17 +71,14 @@ function createPetal() {
 
     setTimeout(() => {
         petal.remove();
-    }, 8000);
+    }, 8000); // Remove petal after 8 seconds
 }
 
-setInterval(createPetal, 300);
+setInterval(createPetal, 300); // Create a new petal every 300ms
 
 // Curtain Effect
 document.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('curtain-open');
-    setTimeout(() => {
-        document.body.classList.remove('curtain-open');
-        document.querySelector('main').style.display = 'block'; // Show the main content after the curtain opens
-        document.body.style.overflow = 'auto'; // Allow scrolling after the curtain opens
-    }, 4000); // Adjust timing to match the transition duration
+    document.body.classList.add('curtain-open'); // Open the curtain
+    document.querySelector('main').style.display = 'block'; // Show the main content
+    document.body.style.overflow = 'auto'; // Allow scrolling
 });
