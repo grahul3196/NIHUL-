@@ -30,11 +30,11 @@ navLinks.forEach(link => {
         e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         sections.forEach(section => {
+            section.classList.remove('active');
+            section.classList.add('d-none');
             if (section.id === targetId) {
                 section.classList.add('active');
-                section.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
-            } else {
-                section.classList.remove('active');
+                section.classList.remove('d-none');
             }
         });
         // Collapse the navbar on mobile after clicking a link
@@ -44,7 +44,7 @@ navLinks.forEach(link => {
 
 // Set Home Section as Active on Load
 document.getElementById('home').classList.add('active');
-document.getElementById('home').style.display = 'block';
+document.getElementById('home').classList.remove('d-none');
 
 // Initialize Lightbox
 lightbox.option({
@@ -54,11 +54,7 @@ lightbox.option({
 
 // Play Background Music
 const backgroundMusic = document.getElementById('background-music');
-
-// Play music after user interaction
-document.addEventListener('click', () => {
-    backgroundMusic.play();
-}, { once: true });
+backgroundMusic.play();
 
 // Rose Petals Falling Animation
 function createPetal() {
@@ -71,14 +67,13 @@ function createPetal() {
 
     setTimeout(() => {
         petal.remove();
-    }, 8000); // Remove petal after 8 seconds
+    }, 8000);
 }
 
-setInterval(createPetal, 300); // Create a new petal every 300ms
+setInterval(createPetal, 300);
 
 // Curtain Effect
-document.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('curtain-open'); // Open the curtain
-    document.querySelector('main').style.display = 'block'; // Show the main content
-    document.body.style.overflow = 'auto'; // Allow scrolling
-});
+document.body.classList.add('curtain-open');
+setTimeout(() => {
+    document.body.classList.remove('curtain-open');
+}, 2000); // Adjust timing as needed
