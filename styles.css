@@ -102,7 +102,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Shivaji02', cursive;
     font-size: 3em;
     margin: 0;
 }
@@ -161,7 +161,7 @@ h2 {
     color: #ff6600;
     font-size: 2em;
     margin-bottom: 20px;
-    font-family: 'CVMaya', cursive;
+    font-family: '', cursive;
 }
 
 form {
