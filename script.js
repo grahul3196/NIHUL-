@@ -30,11 +30,10 @@ navLinks.forEach(link => {
         e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         sections.forEach(section => {
-            section.classList.remove('active');
-            section.style.display = 'none'; // Hide all sections
             if (section.id === targetId) {
                 section.classList.add('active');
-                section.style.display = 'block'; // Show the target section
+            } else {
+                section.classList.remove('active');
             }
         });
         // Collapse the navbar on mobile after clicking a link
