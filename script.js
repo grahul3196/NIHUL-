@@ -32,6 +32,7 @@ navLinks.forEach(link => {
         sections.forEach(section => {
             if (section.id === targetId) {
                 section.classList.add('active');
+                section.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
             } else {
                 section.classList.remove('active');
             }
