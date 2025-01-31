@@ -412,7 +412,7 @@ audio, video {
     background-image: url('curtain.jpg'); /* Make sure this image exists */
     background-size: cover;
     z-index: 9998;
-    transition: transform 4s ease-in-out;
+    transition: transform 5s ease-in-out;
     transform: translateY(0);
 }
 
