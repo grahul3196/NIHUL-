@@ -86,6 +86,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    overflow: hidden; /* Prevent scrolling while the curtain is visible */
 }
 
 header {
@@ -137,11 +138,12 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+    display: none; /* Hide the main content initially */
 }
 
 section {
-    padding: 40px 20px;
-    margin: 20px 0;
+    padding: 20px; /* Adjusted padding */
+    margin: 0; /* Remove margin */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -149,6 +151,8 @@ section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s, transform 0.6s;
+    min-height: calc(100vh - 56px); /* Ensure sections fit within the viewport minus header height */
+    overflow-y: auto; /* Allow scrolling within sections if content overflows */
 }
 
 section.active {
