@@ -371,3 +371,62 @@ audio, video {
     color: #ff6600;
     margin: 30px 0;
 }
+
+/* Rose Petal Animation */
+#petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.petal {
+    position: absolute;
+    background-image: url('rose-petal.png'); /* Make sure this image exists */
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    opacity: 0.7;
+    animation: falling linear infinite;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(-10%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Curtain Effect */
+#curtain-left, #curtain-right {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #ff6600; /* or any color you prefer */
+    z-index: 9998;
+    transition: transform 1s ease-in-out;
+}
+
+#curtain-left {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+#curtain-right {
+    right: 0;
+    transform: translateX(100%);
+}
+
+body.curtain-open #curtain-left {
+    transform: translateX(0);
+}
+
+body.curtain-open #curtain-right {
+    transform: translateX(0);
+}
