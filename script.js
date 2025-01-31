@@ -76,5 +76,5 @@ setInterval(createPetal, 300);
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.classList.add('curtain-open');
-    }, 1000); // Wait 1 second before opening the curtain
+    }, 2000); // Wait 1 second before opening the curtain
 });
