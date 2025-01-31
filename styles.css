@@ -385,7 +385,7 @@ audio, video {
 
 .petal {
     position: absolute;
-    background-image: url('rose-petal.png'); /* Make sure this image exists */
+    background-image: url('rose.png'); /* Make sure this image exists */
     background-size: contain;
     width: 15px;
     height: 15px;
