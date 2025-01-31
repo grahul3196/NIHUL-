@@ -410,7 +410,7 @@ social-media-icons a:hover {
     width: 50%;
     background-size: cover;
     z-index: 9998;
-    transition: transform 4s ease-in-out;
+    transition: left 4s ease-in-out, right 4s ease-in-out;
 }
 
 #curtain-left {
