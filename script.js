@@ -73,7 +73,8 @@ function createPetal() {
 setInterval(createPetal, 300);
 
 // Curtain Effect
-document.body.classList.add('curtain-open');
-setTimeout(() => {
-    document.body.classList.remove('curtain-open');
-}, 2000); // Adjust timing as needed
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.body.classList.add('curtain-open');
+    }, 1000); // Wait 1 second before opening the curtain
+});
