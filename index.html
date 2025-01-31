@@ -14,8 +14,8 @@
     <div id="curtain-left"></div>
     <div id="curtain-right"></div>
     <header class="bg-marathi text-white text-center py-5">
-        <h1 class="display-4">विवाह❤️</h1>
-        <p class="lead">गजाकोश परिवार आणि शिंदे परिवार आपले स्वागत करीत आहेत.</p>
+        <h1 class="display-4"></h1>
+        <p class="lead"></p>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">विवाह❤️</a>
@@ -71,7 +71,7 @@
 
             <div id="petals-container"></div>
         </section>
-        <section id="invitation-details">
+        <section id="invitation-details" class="d-none">
             <h2 class="text-center">लग्नाचे तपशील</h2>
             <div class="details text-center">
                 <img src="bride.jpg" alt="वधू" class="rounded-circle mx-2" width="150" height="150">
@@ -86,10 +86,32 @@
                         <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=renapur &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         <a href="https://sprunkiphasez.com/">Sprunki Phase</a>
                     </div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 100%;
+                            height: 0;
+                            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                        }
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none!important;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        .gmap_iframe {
+                            width: 100%!important;
+                            height: 100%!important;
+                        }
+                    </style>
                 </div>
             </div>
         </section>
-        <section id="gallery">
+        <section id="gallery" class="d-none">
             <h2 class="text-center">फोटो गॅलरी</h2>
             <div class="slideshow text-center">
                 <a href="photo1.jpg" data-lightbox="wedding-gallery"><img src="photo1_thumb.jpg" alt="Photo 1"></a>
@@ -104,13 +126,13 @@
                 <button type="submit" class="btn btn-primary">अपलोड</button>
             </form>
         </section>
-        <section id="guest-interaction">
+        <section id="guest-interaction" class="d-none">
             <h2 class="text-center">अतिथी संवाद</h2>
             <div class="text-center">
                 <iframe src="guest-interaction.html" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-        <section id="music-videos">
+        <section id="music-videos" class="d-none">
             <h2 class="text-center">संगीत आणि व्हिडिओ</h2>
             <div class="text-center">
                 <audio controls class="my-3">
@@ -122,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact-us">
+        <section id="contact-us" class="d-none">
             <h2 class="text-center">संपर्क</h2>
             <div class="contact-list text-center">
                 <p>राहुल गजाकोश: <a href="tel:+919137159303">+91 9137159303</a></p>
@@ -130,7 +152,7 @@
                 <!-- Add more contacts as needed -->
             </div>
         </section>
-        <section id="family-members">
+        <section id="family-members" class="d-none">
             <h2 class="text-center">कुटुंबातील सदस्य</h2>
             <div class="family-list text-center">
                 <h3>वराचे कुटुंब</h3>
@@ -141,7 +163,7 @@
                 <p>आई: <span>वधूची आई</span></p>
             </div>
         </section>
-        <section id="schedule">
+        <section id="schedule" class="d-none">
             <h2 class="text-center">कार्यक्रम</h2>
             <div class="schedule-list text-center">
                 <h3>संगीत समारंभ</h3>
