@@ -79,3 +79,13 @@ setTimeout(() => {
     document.querySelector('main').style.display = 'block'; // Show the main content after the curtain opens
     document.body.style.overflow = 'auto'; // Allow scrolling after the curtain opens
 }, 4000); // Adjust timing to match the transition duration
+
+// Ensure the curtain stays open
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('curtain-open');
+    setTimeout(() => {
+        document.body.classList.remove('curtain-open');
+        document.querySelector('main').style.display = 'block'; // Show the main content after the curtain opens
+        document.body.style.overflow = 'auto'; // Allow scrolling after the curtain opens
+    }, 4000); // Adjust timing to match the transition duration
+});
