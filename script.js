@@ -76,4 +76,6 @@ setInterval(createPetal, 300);
 document.body.classList.add('curtain-open');
 setTimeout(() => {
     document.body.classList.remove('curtain-open');
-}, 2000); // Adjust timing as needed
+    document.querySelector('main').style.display = 'block'; // Show the main content after the curtain opens
+    document.body.style.overflow = 'auto'; // Allow scrolling after the curtain opens
+}, 4000); // Adjust timing to match the transition duration
