@@ -1,5 +1,5 @@
 // Countdown Timer
-const weddingDate = new Date('2025-12-25T00:00:00').getTime();
+const weddingDate = new Date('2025-05-15T12:00:00').getTime();
 
 const countdown = setInterval(() => {
     const now = new Date().getTime();
@@ -71,3 +71,9 @@ function createPetal() {
 }
 
 setInterval(createPetal, 300);
+
+// Curtain Effect
+document.body.classList.add('curtain-open');
+setTimeout(() => {
+    document.body.classList.remove('curtain-open');
+}, 2000); // Adjust timing as needed
