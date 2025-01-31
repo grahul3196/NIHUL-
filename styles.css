@@ -302,7 +302,7 @@ audio, video {
     transition: color 0.3s;
 }
 
-.social-media-icons a:hover {
+social-media-icons a:hover {
     color: #ffcc00;
 }
 
@@ -436,4 +436,3 @@ body.curtain-open #curtain-left {
 body.curtain-open #curtain-right {
     transform: translateX(100%);
 }
-
