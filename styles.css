@@ -386,7 +386,7 @@ audio, video {
 
 .petal {
     position: absolute;
-    background-image: url('rose-petal.png'); /* Make sure this image exists */
+    background-image: url('rose.png'); /* Make sure this image exists */
     background-size: contain;
     width: 15px;
     height: 15px;
@@ -409,7 +409,7 @@ audio, video {
     top: 0;
     height: 100%;
     width: 50%;
-    background-image: url('curtain.png'); /* Make sure this image exists */
+    background-image: url('curtain.jpg'); /* Make sure this image exists */
     background-size: cover;
     z-index: 9998;
     transition: transform 1s ease-in-out;
