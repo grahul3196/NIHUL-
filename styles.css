@@ -86,7 +86,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling while the curtain is visible */
 }
 
 header {
@@ -138,12 +137,11 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    display: none; /* Hide the main content initially */
 }
 
 section {
-    padding: 20px; /* Adjusted padding */
-    margin: 0; /* Remove margin */
+    padding: 40px 20px;
+    margin: 20px 0;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -151,8 +149,6 @@ section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s, transform 0.6s;
-    min-height: calc(100vh - 56px); /* Ensure sections fit within the viewport minus header height */
-    overflow-y: auto; /* Allow scrolling within sections if content overflows */
 }
 
 section.active {
@@ -350,30 +346,8 @@ audio, video {
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 20px 10px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 10px;
-        min-height: calc(100vh - 100px); /* Adjusted for smaller screens */
+    #countdown-timer {
+        flex-wrap: nowrap;
     }
 
     .time-box {
@@ -411,7 +385,7 @@ audio, video {
 
 .petal {
     position: absolute;
-    background-image: url('rose.png'); /* Make sure this image exists */
+    background-image: url('rose-petal.png'); /* Make sure this image exists */
     background-size: contain;
     width: 15px;
     height: 15px;
@@ -434,29 +408,26 @@ audio, video {
     top: 0;
     height: 100%;
     width: 50%;
+    background-image: url('curtain.png'); /* Make sure this image exists */
     background-size: cover;
     z-index: 9998;
-    transition: transform 4s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 #curtain-left {
     left: 0;
-    background-image: url('curtain.jpg'); /* Make sure this image exists */
-    background-position: left;
-    transform: translateX(0);
+    transform: translateX(-100%);
 }
 
 #curtain-right {
     right: 0;
-    background-image: url('curtain.jpg'); /* Make sure this image exists */
-    background-position: right;
-    transform: translateX(0);
+    transform: translateX(100%);
 }
 
 body.curtain-open #curtain-left {
-    transform: translateX(-100%);
+    transform: translateX(0);
 }
 
 body.curtain-open #curtain-right {
-    transform: translateX(100%);
+    transform: translateX(0);
 }
