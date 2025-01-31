@@ -350,8 +350,30 @@ social-media-icons a:hover {
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-    #countdown-timer {
-        flex-wrap: nowrap;
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px;
+        min-height: calc(100vh - 100px); /* Adjusted for smaller screens */
     }
 
     .time-box {
