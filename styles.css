@@ -86,7 +86,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling while the curtain is visible */
 }
 
 header {
@@ -138,7 +137,6 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    display: none; /* Hide the main content initially */
 }
 
 section {
