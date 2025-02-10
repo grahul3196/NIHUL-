@@ -29,16 +29,7 @@ navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
-        sections.forEach(section => {
-            section.classList.remove('active');
-            section.classList.add('d-none');
-            if (section.id === targetId) {
-                section.classList.add('active');
-                section.classList.remove('d-none');
-            }
-        });
-        // Collapse the navbar on mobile after clicking a link
-        $('.navbar-collapse').collapse('hide');
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
     });
 });
 
@@ -63,6 +54,8 @@ function createPetal() {
     petal.style.left = `${Math.random() * 100}vw`;
     petal.style.animationDuration = `${Math.random() * 3 + 2}s`;
     petal.style.animationDelay = `${Math.random() * 5}s`;
+    petal.style.width = `${Math.random() * 10 + 10}px`;
+    petal.style.height = `${Math.random() * 10 + 10}px`;
     document.getElementById('petals-container').appendChild(petal);
 
     setTimeout(() => {
@@ -76,5 +69,17 @@ setInterval(createPetal, 300);
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.classList.add('curtain-open');
-    }, 2000); // Wait 1 second before opening the curtain
+    }, 2000); // Wait 2 seconds before opening the curtain
+});
+
+// Music Control
+const musicControl = document.getElementById('music-control');
+musicControl.addEventListener('click', () => {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play();
+        musicControl.textContent = 'Pause Music';
+    } else {
+        backgroundMusic.pause();
+        musicControl.textContent = 'Play Music';
+    }
 });
