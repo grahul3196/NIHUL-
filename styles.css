@@ -1,7 +1,7 @@
 /* Define Custom Fonts */
 @font-face {
     font-family: 'CustomFont1';
-    src: url('') format('woff');
+    src: url('fonts/custom-font1.woff') format('woff');
 }
 
 @font-face {
@@ -36,12 +36,12 @@
 
 @font-face {
     font-family: 'Shivaji02';
-    src: url('Shivaji02.woff') format('woff');
+    src: url('fonts/Shivaji02.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CVMaya';
-    src: url('CVMaya.woff') format('woff');
+    src: url('fonts/CVMaya.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -174,7 +174,7 @@ h2 {
     color: #ff6600;
     font-size: 2em;
     margin-bottom: 20px;
-    font-family: '', cursive;
+    font-family: 'Shivaji02', cursive;
 }
 
 form {
