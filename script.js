@@ -93,3 +93,15 @@ musicControl.addEventListener('click', () => {
     }
 });
 
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+const header = document.querySelector('header');
+const navbar = document.querySelector('.navbar');
+
+darkModeToggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+    sections.forEach(section => section.classList.toggle('dark-mode'));
+    navbar.classList.toggle('navbar-dark-mode');
+});
