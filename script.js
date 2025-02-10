@@ -92,3 +92,4 @@ musicControl.addEventListener('click', () => {
         musicControl.textContent = 'Play Music';
     }
 });
+
